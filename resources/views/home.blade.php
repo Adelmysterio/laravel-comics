@@ -2,6 +2,8 @@
 
 @section('main-content')
 
-
+<main>
+    
+</main>
 
 @endsection
