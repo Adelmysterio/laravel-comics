@@ -39,6 +39,7 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 1rem 0;
+        text-transform: uppercase;
 
         img {
             width: 80%;
@@ -52,9 +53,18 @@ header {
                 margin-right: 1.5rem;
                 font-weight: bolder;
                 color: $dc-gray;
+
+                a {
+                    text-decoration: none;
+                    color: $dc-gray;
+                }
             }
 
-            li:hover {
+            .active {
+                color: $dc-blue;
+            }
+
+            a:hover {
                 color: $dc-blue;
             }
         }
@@ -63,7 +73,38 @@ header {
 
 main {
     background-image: url('../img/jumbotron.jpg');
-    height: 40rem;
+    padding: 5rem 0;
+
+    div.wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: $dc-blue;
+
+        article {
+            width: calc(100% / 6 - 2rem);
+            margin: 1rem;
+            margin-bottom: 4rem;
+            color: white;
+
+
+            figure {
+                width: 100%;
+                height: 40%;
+                overflow: hidden;
+                margin-bottom: 1rem;
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            h4 {
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 
 footer {
@@ -95,7 +136,8 @@ footer {
 
 
             img {
-                width: 100%;;
+                width: 100%;
+                ;
                 position: absolute;
                 right: 0;
                 top: -100px
@@ -120,4 +162,3 @@ footer {
     }
 
 }
-
